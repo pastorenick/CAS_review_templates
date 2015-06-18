@@ -1,0 +1,272 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%   Confirmation of Canididature Review - template                            %
+%                                                                             %
+%                                                                             %
+% Authors: N. Pastorello                  			                              %
+% started: 18/06/2015                             				              %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PAPER
+%\documentclass[useAMS,usenatbib,usedcolumn]{mn2e}
+%% Single column review
+\documentclass[useAMS,usenatbib,onecolumn]{mn2e}
+\input{mycommands}
+\usepackage[figuresright]{rotating}
+\usepackage{lscape}
+
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{bigdelim}
+\usepackage{bigstrut}
+\usepackage{floatflt}	%For floating figures/tables on one side
+\usepackage{wrapfig}
+
+\usepackage{multicol}
+\newcommand{\sech}{\mathrm{sech} \,}
+
+\usepackage[compact]{titlesec}
+%\titlespacing{\section}{0pt}{2ex}{1ex}
+%\titlespacing{\subsection}{0pt}{1ex}{0ex}
+\titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
+\usepackage{indentfirst}
+
+%% Journals definitions
+
+%\let\jnl@style=\rm
+%\def\ref@jnl#1{{\jnl@style#1}}
+
+\def\aj{AJ}                   % Astronomical Journal
+\def\araa{ARA\&A}             % Annual Review of Astron and Astrophys
+\def\apj{ApJ}                 % Astrophysical Journal
+\def\apjl{ApJ}                % Astrophysical Journal, Letters
+\def\apjs{ApJS}               % Astrophysical Journal, Supplement
+\def\ao{Appl.~Opt.}           % Applied Optics
+\def\apss{Ap\&SS}             % Astrophysics and Space Science
+\def\aap{A\&A}                % Astronomy and Astrophysics
+\def\aapr{A\&A~Rev.}          % Astronomy and Astrophysics Reviews
+\def\aaps{A\&AS}              % Astronomy and Astrophysics, Supplement
+\def\azh{AZh}                 % Astronomicheskii Zhurnal
+\def\baas{BAAS}               % Bulletin of the AAS
+\def\jrasc{JRASC}             % Journal of the RAS of Canada
+\def\memras{MmRAS}            % Memoirs of the RAS
+\def\mnras{MNRAS}             % Monthly Notices of the RAS
+\def\pra{Phys.~Rev.~A}        % Physical Review A: General Physics
+\def\prb{Phys.~Rev.~B}        % Physical Review B: Solid State
+\def\prc{Phys.~Rev.~C}        % Physical Review C
+\def\prd{Phys.~Rev.~D}        % Physical Review D
+\def\pre{Phys.~Rev.~E}        % Physical Review E
+\def\prl{Phys.~Rev.~Lett.}    % Physical Review Letters
+\def\pasp{PASP}               % Publications of the ASP
+\def\pasj{PASJ}               % Publications of the ASJ
+\def\qjras{QJRAS}             % Quarterly Journal of the RAS
+\def\skytel{S\&T}             % Sky and Telescope
+\def\solphys{Sol.~Phys.}      % Solar Physics
+\def\sovast{Soviet~Ast.}      % Soviet Astronomy
+\def\ssr{Space~Sci.~Rev.}     % Space Science Reviews
+\def\zap{ZAp}                 % Zeitschrift fuer Astrophysik
+\def\nat{Nature}              % Nature
+\def\iaucirc{IAU~Circ.}       % IAU Cirulars
+\def\aplett{Astrophys.~Lett.} % Astrophysics Letters
+\def\apspr{Astrophys.~Space~Phys.~Res.}
+                % Astrophysics Space Physics Research
+\def\bain{Bull.~Astron.~Inst.~Netherlands} 
+                % Bulletin Astronomical Institute of the Netherlands
+\def\fcp{Fund.~Cosmic~Phys.}  % Fundamental Cosmic Physics
+\def\gca{Geochim.~Cosmochim.~Acta}   % Geochimica Cosmochimica Acta
+\def\grl{Geophys.~Res.~Lett.} % Geophysics Research Letters
+\def\jcp{J.~Chem.~Phys.}      % Journal of Chemical Physics
+\def\jgr{J.~Geophys.~Res.}    % Journal of Geophysics Research
+\def\jqsrt{J.~Quant.~Spec.~Radiat.~Transf.}
+                % Journal of Quantitiative Spectroscopy and Radiative Transfer
+\def\memsai{Mem.~Soc.~Astron.~Italiana}
+                % Mem. Societa Astronomica Italiana
+%\def\nphysa{Nucl.~Phys.~A}   % Nuclear Physics A
+\def\physrep{Phys.~Rep.}   % Physics Reports
+\def\physscr{Phys.~Scr}   % Physica Scripta
+\def\planss{Planet.~Space~Sci.}   % Planetary Space Science
+\def\procspie{Proc.~SPIE}   % Proceedings of the SPIE
+
+\let\astap=\aap
+\let\apjlett=\apjl
+\let\apjsupp=\apjs
+\let\applopt=\ao
+
+%% END Journals definitions
+
+\def\kms{$\rm km\;s^{-1}$}
+\def\arcpix{$\rm ''\;pixel^{-1}$}
+\def\angpix{$\rm \AA\;pixel^{-1}$}
+
+\hyphenation{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  Titlepage                                                                  %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Confirmation of Candidature Review}
+\author[Student Name]
+ {Student Name}
+ 
+\pagestyle{empty}
+\begin{document}
+
+\fontsize{11}{12.5}\selectfont
+%\pagestyle{empty}
+%\linespread{0.5}
+\begin{center}
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=6cm,width=3cm]{./astro_v.eps}
+\end{center}
+\end{figure}
+
+{\bf \LARGE S\Large winburne \LARGE U\Large niversity of  \LARGE T\Large echnology\\
+\vspace{0.5cm}}
+\LARGE C\Large entre for \LARGE A\Large strophysics and \LARGE S\Large upercomputing\\
+\vspace{0.5cm}
+
+\large Confirmation of Candidature Review\\
+\vspace{0.5cm}
+
+
+
+\Huge{\bf Title of the Ph.D. project}
+
+\vspace{3cm}
+\large{Starting date: 1st January 2014}
+\end{center}
+
+
+\begin{flushleft}
+{\bf Coordinating Supervisor:}\\
+Name main supervisor\\
+\vspace{0.5cm}
+{\bf Associate Supervisor:}\\
+Name(s) second supervisor(s)\\
+\end{flushleft}
+
+\begin{flushright}
+{\bf Student:}\\
+Student's name / Student's ID number
+\end{flushright}\hspace{8cm}
+
+
+\begin{center}
+29 May 2012
+\end{center}
+\newpage
+
+\date{Date of the review}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  1. Introduction                                                            %
+%  \label{sec:introduction}                                                   %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{sec:introduction}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  2. Thesis proposal                                   %
+%  \label{sec:thesis}                                                       %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Thesis Proposal}
+\label{sec:thesis}
+
+\begin{itemize}
+	\item{What is the purpose of the thesis project?}
+	\item{How would this project answer the questions posed in the Introduction?}
+	\item{How would this project improve the knowledge of the field?}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  3. Current status                        %
+%  \label{sec:current}                                                       %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work to date}
+
+\begin{itemize}
+	\item{What did I do in the first 6 months of my Ph.D. candidature?}
+	\item{Are there (preliminary) results to present?}
+	\item{What are the techniques/methods I'm using?}
+\end{itemize}
+
+\section{Other activities}
+
+	\noindent\textbf{Conferences/schools attended}
+	\begin{itemize}
+  		\item{\textit{Workshop blah}} at CSIRO, Epping, Sydney 9/02/2012 - 10/02/2012. 
+  		\item{\textit{Conference blah 2}} at Garching, Germany 15/03/2012 - 20/03/2012. 
+	\end{itemize}
+
+	\textbf{Observational runs}
+	\begin{itemize}
+		\item{16/04/2012} DEIMOS observation on the Keck-2 telescope.
+	\end{itemize}
+
+	\textbf{Future Conferences/schools}
+	In the next future I will attend the following conferences/schools:
+	\begin{itemize}
+		\item{\textit{ASA Harley Wood Winter School workshop}} at Wentworth Falls, NSW 28/06/2012 - 1/07/2012.
+		\item{\textit{ASA Annual Scientific Meeting}} at UNSW, Sydney, NSW 1/07/2012 - 6/07/2012.
+	\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  4. Future works and thesis plan                       %
+%  \label{sec:future}                                                       %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Future works and thesis plan}
+\label{sec:future}
+\begin{itemize}
+	\item{What are the next steps in my research?}
+	\item{What data do I need in order to complete the project(s)?}
+	\item{How many papers/chapters do I plan to submit, and what are they going to be about?}
+\end{itemize}
+
+
+\subsection*{Timeline}
+
+\begin{tabular*}{0.75\textwidth}{ l l }
+  29 May 2012 								& Confirmation of candidature review \\
+  November 2012								& Keck-2 DEIMOS observation of something \\
+  June-December 2012						& First paper preparation \\
+  January 2013								& First paper submission\\
+  February-December 2013					& Second paper preparation \\
+  May 2013 		 							& Mid-candidature review \\
+  January 2014								& Second paper submission \\
+  February-August 2014		    			& Third paper preparation \\
+  May 2014  								& Pre-submission review \\
+  September 2014							& Third paper submission \\							 
+  December 2014  							& Ph.D. thesis submission \\
+\end{tabular*}
+
+%Bibliography
+\begin{multicols}{2}
+	\bibliographystyle{mn2e}
+	{\footnotesize
+	\setlength{\itemsep}{1pt}
+	\begin{spacing}{0.5}
+		\bibliography{bibliography}{}
+	\end{spacing}	}
+\end{multicols}
+
+
+\end{document}

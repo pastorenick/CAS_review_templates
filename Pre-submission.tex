@@ -1,0 +1,313 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%   Pre-submission Review - template      				                      %
+%                                                                             %
+%                                                                             %
+% Authors: N. Pastorello                  			                          %
+% started: 18/06/2015                             				              %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PAPER
+%\documentclass[useAMS,usenatbib,usedcolumn]{mn2e}
+%% Single column review
+\documentclass[useAMS,usenatbib,onecolumn]{mn2e}
+\input{mycommands}
+\usepackage[figuresright]{rotating}
+\usepackage{lscape}
+\usepackage{setspace}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{multirow}
+
+\usepackage{bigdelim}
+\usepackage{bigstrut}
+\usepackage{floatflt}	%For floating figures/tables on one side
+\usepackage{wrapfig}
+
+\usepackage{multicol}
+\newcommand{\sech}{\mathrm{sech} \,}
+
+\usepackage[compact]{titlesec}
+%\titlespacing{\section}{0pt}{2ex}{1ex}
+%\titlespacing{\subsection}{0pt}{1ex}{0ex}
+\titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
+\usepackage{indentfirst}
+
+%% Journals definitions
+
+%\let\jnl@style=\rm
+%\def\ref@jnl#1{{\jnl@style#1}}
+
+\def\aj{AJ}                   % Astronomical Journal
+\def\araa{ARA\&A}             % Annual Review of Astron and Astrophys
+\def\apj{ApJ}                 % Astrophysical Journal
+\def\apjl{ApJ}                % Astrophysical Journal, Letters
+\def\apjs{ApJS}               % Astrophysical Journal, Supplement
+\def\ao{Appl.~Opt.}           % Applied Optics
+\def\apss{Ap\&SS}             % Astrophysics and Space Science
+\def\aap{A\&A}                % Astronomy and Astrophysics
+\def\aapr{A\&A~Rev.}          % Astronomy and Astrophysics Reviews
+\def\aaps{A\&AS}              % Astronomy and Astrophysics, Supplement
+\def\azh{AZh}                 % Astronomicheskii Zhurnal
+\def\baas{BAAS}               % Bulletin of the AAS
+\def\jrasc{JRASC}             % Journal of the RAS of Canada
+\def\memras{MmRAS}            % Memoirs of the RAS
+\def\mnras{MNRAS}             % Monthly Notices of the RAS
+\def\pra{Phys.~Rev.~A}        % Physical Review A: General Physics
+\def\prb{Phys.~Rev.~B}        % Physical Review B: Solid State
+\def\prc{Phys.~Rev.~C}        % Physical Review C
+\def\prd{Phys.~Rev.~D}        % Physical Review D
+\def\pre{Phys.~Rev.~E}        % Physical Review E
+\def\prl{Phys.~Rev.~Lett.}    % Physical Review Letters
+\def\pasp{PASP}               % Publications of the ASP
+\def\pasj{PASJ}               % Publications of the ASJ
+\def\qjras{QJRAS}             % Quarterly Journal of the RAS
+\def\skytel{S\&T}             % Sky and Telescope
+\def\solphys{Sol.~Phys.}      % Solar Physics
+\def\sovast{Soviet~Ast.}      % Soviet Astronomy
+\def\ssr{Space~Sci.~Rev.}     % Space Science Reviews
+\def\zap{ZAp}                 % Zeitschrift fuer Astrophysik
+\def\nat{Nature}              % Nature
+\def\iaucirc{IAU~Circ.}       % IAU Cirulars
+\def\aplett{Astrophys.~Lett.} % Astrophysics Letters
+\def\apspr{Astrophys.~Space~Phys.~Res.}
+                % Astrophysics Space Physics Research
+\def\bain{Bull.~Astron.~Inst.~Netherlands} 
+                % Bulletin Astronomical Institute of the Netherlands
+\def\fcp{Fund.~Cosmic~Phys.}  % Fundamental Cosmic Physics
+\def\gca{Geochim.~Cosmochim.~Acta}   % Geochimica Cosmochimica Acta
+\def\grl{Geophys.~Res.~Lett.} % Geophysics Research Letters
+\def\jcp{J.~Chem.~Phys.}      % Journal of Chemical Physics
+\def\jgr{J.~Geophys.~Res.}    % Journal of Geophysics Research
+\def\jqsrt{J.~Quant.~Spec.~Radiat.~Transf.}
+                % Journal of Quantitiative Spectroscopy and Radiative Transfer
+\def\memsai{Mem.~Soc.~Astron.~Italiana}
+                % Mem. Societa Astronomica Italiana
+%\def\nphysa{Nucl.~Phys.~A}   % Nuclear Physics A
+\def\physrep{Phys.~Rep.}   % Physics Reports
+\def\physscr{Phys.~Scr}   % Physica Scripta
+\def\planss{Planet.~Space~Sci.}   % Planetary Space Science
+\def\procspie{Proc.~SPIE}   % Proceedings of the SPIE
+
+\let\astap=\aap
+\let\apjlett=\apjl
+\let\apjsupp=\apjs
+\let\applopt=\ao
+
+%% END Journals definitions
+
+\def\kms{$\rm km\;s^{-1}$}
+\def\arcpix{$\rm ''\;pixel^{-1}$}
+\def\angpix{$\rm \AA\;pixel^{-1}$}
+
+\hyphenation{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  Titlepage                                                                  %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Pre-submission Review}
+\author[Student Name]
+ {Student Name}
+ 
+\pagestyle{empty}
+\begin{document}
+
+\fontsize{11}{12.5}\selectfont
+%\pagestyle{empty}
+%\linespread{0.5}
+\begin{center}
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=6cm,width=3cm]{./astro_v.eps}
+\end{center}
+\end{figure}
+
+{\bf \LARGE S\Large winburne \LARGE U\Large niversity of  \LARGE T\Large echnology\\
+\vspace{0.5cm}}
+\LARGE C\Large entre for \LARGE A\Large strophysics and \LARGE S\Large upercomputing\\
+\vspace{0.5cm}
+
+\large Mid-candidature Review\\
+\vspace{0.5cm}
+
+
+
+\Huge{\bf Title of the Ph.D. project}
+
+\vspace{3cm}
+\large{Starting date: 1st January 2014}
+\end{center}
+
+
+\begin{flushleft}
+{\bf Coordinating Supervisor:}\\
+Name main supervisor\\
+\vspace{0.5cm}
+{\bf Associate Supervisor:}\\
+Name(s) second supervisor(s)\\
+\end{flushleft}
+
+\begin{flushright}
+{\bf Student:}\\
+Student's name / Student's ID number
+\end{flushright}\hspace{8cm}
+
+
+\begin{center}
+29 May 2012
+\end{center}
+\newpage
+
+\date{Date of the review}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  1. Introduction                                                            %
+%  \label{sec:introduction}                                                   %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{sec:introduction}
+
+\begin{itemize}
+	\item{Short introduction}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  2. Projects					                                  %
+%  \label{sec:projects}                                                       %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\label{sec:projects}          
+
+\begin{itemize}
+	\item{List the completed projects, included data analysis, results and discussion}
+	\item{List the current projects, included data analysis, preliminary results and discussion}
+	\item{List the future projects}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  3. Meetings, schools and conferences attended                        								  %		
+%  \label{sec:meetings}                                                        %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Meetings, schools and conferences attended}
+\label{sec:meetings}    
+
+	\begin{itemize}
+%		\item{Swinburne Keck Science workshop}, 26$^{\rm{th}}$ - 28$^{\rm{th}}$ March 2012, Swinburne University.
+		%
+		\item{Harley Wood Winter school}, 28$^{\rm{th}}$ June - 1$^{\rm{st}}$ July 2012, Blue Mountains (NSW).
+		%
+		\item{ASA Annual Scientific meeting}, 1$^{\rm{st}}$ - 6$^{\rm{th}}$ July 2012, UNSW, Sydney (NSW).
+		%
+		\item{Publishing With Impact workshop}, 10$^{\rm{th}}$ - 11$^{\rm{th}}$ December 2012, Swinburne University.
+		%
+		\item{Astroinformatics school}, 18$^{\rm{th}}$ - 20$^{\rm{th}}$ February 2012, BQ, Brisbane (QL).  
+	\end{itemize}
+	%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  4. Publications														 %
+%  \label{sec:publications}                                                        %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+	
+\section{Extra Publications}											
+\label{sec:publications}  
+	%
+	\begin{itemize}
+	%
+	\item{\textbf{Pastorello}, \textbf{N.} et al., 2013}, ``The planetary nebulae population in the nuclear regions of M31: the SAURON view'', MNRAS, 420, 1219.
+	%
+	\item{Corsini, E. M., Mend\'ez-Abreu, J., \textbf{Pastorello}, \textbf{N.} et al., 2012}, ``Polar bulges and polar nuclear discs: the case of NGC~4698'', MNRAS, 423L, 79.	
+	%
+\end{itemize}		
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  5. Future plans            		           %
+%  \label{sec:future}                                                       %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Future plans}
+\label{sec:future}  
+\begin{itemize}
+\item{June 2013:} presenting my work at the ``Small Stellar Systems in Tuscany'' conference in Tuscany, Italy and at the 
+                     "The Physical Link between Galaxies and their Halos'' conference in Garching, Germany. 
+\item{July 2013:} presenting my work at the ``ASA Annual Scientific meeting'' in Melbourne, Australia.
+\item{August 2013:} submission first paper and data analysis for the second paper.
+\item{December 2013:} final results for the second paper and submission.
+\item{January 2014:} start of the third project.
+\item{June 2014:} 30 month review and submission third paper.
+\item{July 2014:} start thesis writing.
+\item{December 2014:} thesis submission.
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  6. Thesis plan            		           %
+%  \label{sec:thesis}                                                       %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Thesis plan}
+\label{sec:thesis} 
+
+My preliminary thesis plan is the following:
+\begin{itemize}
+\item{First Chapter: } blah
+\item{Second Chapter:} blah
+\item{Third Chapter:} blah
+\item{Fourth Chapter:} blah
+\item{Fifth Chapter:} blah
+\item{Appendix:} blah
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+%  7. Timeline            		           %
+%  \label{sec:timeline}                                                       %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection*{Timeline}
+\label{sec:timeline} 
+
+\begin{tabular*}{0.75\textwidth}{ l l }
+  May 2014  								& Pre-submission review \\
+  September 2014							& Third paper submission \\							 
+  December 2014  							& Ph.D. thesis submission \\
+\end{tabular*}
+
+%Bibliography
+\begin{multicols}{2}
+	\bibliographystyle{mn2e}
+	{\footnotesize
+	\setlength{\itemsep}{1pt}
+	\begin{spacing}{0.5}
+		\bibliography{bibliography}{}
+	\end{spacing}	}
+\end{multicols}
+
+
+\end{document}
